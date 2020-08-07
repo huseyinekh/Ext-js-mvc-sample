@@ -1,0 +1,14 @@
+Ext.application({
+    requires:['Ext.container.Viewport'],
+    name:"App_",
+    controllers:['Users'],
+    appfolder:'app',
+    launch:function(){
+        Ext.create('Ext.container.Viewport',{
+            layout:'fit',
+            items:{
+                xtype:"userlist",
+            }
+        })
+    }
+})
